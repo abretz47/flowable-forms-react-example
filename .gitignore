@@ -128,3 +128,17 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# MAC_OS
+.DS_Store
+
+# Visual Studio Code
+*.code-workspace
+.project
+.classpath
+.settings/
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
