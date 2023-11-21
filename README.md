@@ -2,6 +2,56 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installing node
+This project requires node and npm to run.
+If you don't have these on the target machine, I'd recommend using [nvm-windows](https://github.com/coreybutler/nvm-windows), which has a windows installer. Click [here](https://github.com/coreybutler/nvm-windows/releases/download/1.1.11/nvm-setup.exe) to download installer.
+
+If you don't want to download nvm, I used node v20.0.0 and npm v9.6.4 to execute the remaining commands.
+
+If you download/install nvm, simply execute these commands in a (new) command prompt (running as administrator).
+
+Verify nvm was installed properly:
+`nvm -v
+1.1.1`
+
+Install node v20.0.0 and npm v9.6.4:
+`nvm install 20.0.0`
+
+`nvm use 20.0.0`
+
+Verify the installs are correct:
+`node -v`
+
+`npm -v`
+
+## Setting up .npmrc for Flowable Arifactory
+Next, we need to make sure that your Flowable credentials are used and npm uses Flowbable Artifactory for the npm registry.
+
+Navigate to [Flowable Artifactory](https://artifacts.flowable.com/ui/repos/tree/General/npm-all) and use BCS credentials. The username is bot-bcssystems@bots.flowable.com and Aditya&Jon have the password. 
+
+Once logged in, make sure you are on the "npm-all" artifact root and click the "Set Me Up" button on the top right:
+<img width="1343" alt="image" src="https://github.com/abretz-mimacom/flowable-forms-react-example/assets/133235099/75adc154-1cfc-443b-ac7a-1b11a643a5eb">
+
+Then, click "Generate Token and Create Instructions:
+<img width="663" alt="image" src="https://github.com/abretz-mimacom/flowable-forms-react-example/assets/133235099/0cd0ea7c-967a-4cb9-9c62-3c12516b3947">
+
+Fllow ALL instructions provided.
+
+By the end, you should have made edits to the .npmrc file, which will allow you to authenticate to the Flowable Artifactory when running npm commands. Without this, you will get 403 errors when trying to install the Flowable Forms packages.
+
+## Clone this repo
+Clone this repo. 
+
+## Install the node_modules
+In the command prompt, navigate to the directory this repo was cloned to.
+`cd <path to where this was cloned>`
+
+`npm install`
+
+## Start the project
+
+`npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
