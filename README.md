@@ -42,6 +42,27 @@ By the end, you should have made edits to the .npmrc file, which will allow you 
 ## Clone this repo
 Clone this repo. 
 
+If you need to install git on your local machine, see [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+You will need to add an ssh public key to your GitHub account settings in order to us git over ssh (most secure, and required for pushing changes).
+<img width="1338" alt="image" src="https://github.com/abretz-mimacom/flowable-forms-react-example/assets/133235099/2392256c-1be1-47fd-893b-629e386cefda">
+
+Using Git GUI for Windows:
+Select "Clone an existing repository"
+<img width="440" alt="image" src="https://github.com/abretz-mimacom/flowable-forms-react-example/assets/133235099/00f726c5-5ee7-4dba-97df-eba0835d3691">
+
+Copy the ssh clone path. ex, `git@github.com:abretz-mimacom/flowable-forms-react-example.git`
+
+Place the copied text in the the Source Location:
+<img width="614" alt="image" src="https://github.com/abretz-mimacom/flowable-forms-react-example/assets/133235099/87089413-e757-47de-9456-a2270fafbdda">
+
+Choose a destination folder on your local machine.
+
+Click "Clone"
+<img width="612" alt="image" src="https://github.com/abretz-mimacom/flowable-forms-react-example/assets/133235099/99be7eaf-cb8b-4097-a8db-f199ed081ea1">
+
+
+
 ## Install the node_modules
 In the command prompt, navigate to the directory this repo was cloned to.
 `cd <path to where this was cloned>`
