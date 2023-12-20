@@ -44,7 +44,6 @@ Clone this repo.
 If you need to install git on your local machine, see [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 You will need to add an ssh public key to your GitHub account settings in order to us git over ssh (most secure, and required for pushing changes).
-<img width="1338" alt="image" src="https://github.com/abretz-mimacom/flowable-forms-react-example/assets/133235099/2392256c-1be1-47fd-893b-629e386cefda">
 
 Using Git GUI for Windows:
 Select "Clone an existing repository"
