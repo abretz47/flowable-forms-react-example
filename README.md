@@ -11,8 +11,7 @@ If you don't want to download nvm, I used node v20.0.0 and npm v9.6.4 to execute
 If you download/install nvm, simply execute these commands in a (new) command prompt (running as administrator).
 
 Verify nvm was installed properly:
-`nvm -v
-1.1.1`
+`nvm -v`
 
 Install node v20.0.0 and npm v9.6.4:
 `nvm install 20.0.0`
