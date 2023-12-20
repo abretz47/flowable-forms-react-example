@@ -27,7 +27,7 @@ Verify the installs are correct:
 ## Setting up .npmrc for Flowable Arifactory
 Next, we need to make sure that your Flowable credentials are used and npm uses Flowbable Artifactory for the npm registry.
 
-Navigate to [Flowable Artifactory](https://artifacts.flowable.com/ui/repos/tree/General/npm-all) and use BCS credentials. The username is bot-bcssystems@bots.flowable.com and Aditya&Jon have the password. 
+Navigate to [Flowable Artifactory](https://artifacts.flowable.com/ui/repos/tree/General/npm-all) and use your flowable credentials.
 
 Once logged in, make sure you are on the "npm-all" artifact root and click the "Set Me Up" button on the top right:
 <img width="1343" alt="image" src="https://github.com/abretz-mimacom/flowable-forms-react-example/assets/133235099/75adc154-1cfc-443b-ac7a-1b11a643a5eb">
@@ -35,7 +35,7 @@ Once logged in, make sure you are on the "npm-all" artifact root and click the "
 Then, click "Generate Token and Create Instructions:
 <img width="663" alt="image" src="https://github.com/abretz-mimacom/flowable-forms-react-example/assets/133235099/0cd0ea7c-967a-4cb9-9c62-3c12516b3947">
 
-Fllow ALL instructions provided.
+Follow ALL instructions provided.
 
 By the end, you should have made edits to the .npmrc file, which will allow you to authenticate to the Flowable Artifactory when running npm commands. Without this, you will get 403 errors when trying to install the Flowable Forms packages.
 
