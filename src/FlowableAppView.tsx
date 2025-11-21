@@ -1,10 +1,24 @@
 import './App.css';
 import { FlowableFlowApp } from '@flowable/work-views'
 import '@flowable/work-views/dist/index.css'
+import React from 'react';
 
+// Type declarations for window.flowable
+declare global {
+    interface Window {
+        flowable: {
+            httpClientCustomConfiguration?: (io: any) => void;
+            endpoints?: {
+                baseUrl: string;
+            }
+        };
+    }
+}
+
+window.flowable.endpoints = { baseUrl: "/flowable-work" };
 window.flowable.httpClientCustomConfiguration = function (io) {
     //add custom headers
-    io.interceptors.request.use(function (config) {
+    io.interceptors.request.use(function (config: any) {
         config.headers = {
             ...config.headers,
             "Authorization": "Basic " + btoa("admin:test")
@@ -13,16 +27,16 @@ window.flowable.httpClientCustomConfiguration = function (io) {
     })
 };
 
-function FlowableAppViewDemo() {
+const FlowableAppViewDemo: React.FC = () => {
     return (
         <div>
             <FlowableFlowApp
-                flowAppId="skeletonApp"
+                flowAppId="breadcrumbExample"
                 container="my-container"
                 showTopNavigationElements={true}
                 hideNavigationElements={true}
-                topNavigationBar={false}
-                showUserProfile={true}
+                topNavigationBar={true}
+                showUserProfile={false}
                 showLogin={false}
                 fullScreen={true}
                 disableRouting={false}
